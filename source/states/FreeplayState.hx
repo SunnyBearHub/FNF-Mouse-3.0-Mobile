@@ -112,6 +112,8 @@ class FreeplayState extends MusicBeatState
 			
 			// too laggy with a lot of songs, so i had to recode the logic for it
 			songText.visible = songText.active = songText.isMenuItem = false;
+			songText.screenCenter(X); 	
+			songText.changeX = false;
 			icon.visible = icon.active = false;
 
 			// using a FlxGroup is too much fuss!
